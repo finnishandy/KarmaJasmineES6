@@ -1,0 +1,35 @@
+/*****************************************
+ * React component base SASS file
+ * This is where you should place any shared variables, mixins, functions or styling
+ *****************************************/
+
+$text-color-default: #212121;
+
+@mixin base() {
+	border: 1px solid $text-color-default;
+	padding: 20px;
+	width: 100%;
+	max-width: 400px;
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size: 14px;
+
+	@include items-in-basket();
+}
+
+@mixin items-in-basket() {
+	.items-in-basket {
+		.items-in-basket-container,
+		.items-in-basket-container li {
+			margin: 0;
+			padding: 0;
+		}
+
+		.items-in-basket-container li {
+			margin-top: 12px;
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+/*****************************************
+ * React component buttons SASS file
+ * This is where you should place any button variables, mixins, functions or styling
+ *****************************************/
+
+@mixin buttons() {
+	a,
+	a:link,
+	a:visited,
+	a:active,
+	a:hover {
+		text-decoration: none;
+		color: $text-color-default;
+		opacity: 1;
+		-moz-transition: opacity 0.35s linear;
+		-webkit-transition: opacity 0.35s linear;
+		transition: opacity 0.35s linear;
+	}
+
+	a:hover {
+		opacity: 0.5;
+	}
+
+	.default-button {
+		display: block;
+		padding: 12px 8px;
+		background: #fff;
+		border: 1px solid $text-color-default;
+		text-decoration: none;
+		width: 100%;
+		text-align: center;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		margin: 12px 0;
+	}
+}

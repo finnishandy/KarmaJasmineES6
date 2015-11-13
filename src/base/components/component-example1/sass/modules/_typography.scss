@@ -1,0 +1,10 @@
+/*****************************************
+ * React component typography SASS file
+ * This is where you should place any text/font variables, mixins, functions or styling
+ *****************************************/
+
+@mixin typography() {
+	h3 {
+		margin-top: 0;
+	}
+}

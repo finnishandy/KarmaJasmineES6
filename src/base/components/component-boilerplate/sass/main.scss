@@ -1,0 +1,23 @@
+/*****************************************
+ * React component main SASS file
+ * All SASS modules should be included in this file
+ *****************************************/
+
+/**
+ * TODO: Replace .fbra_falabella-component below with your unique class name
+ * NOTE: All classes must be prefixed with fbra_ to prevent collisions
+ */
+
+.fbra_falabella-component {
+	@import "modules/base";
+	@include base();
+
+	@import "modules/typography";
+	@include typography();
+
+	@import "modules/forms";
+	@include forms();
+	
+	@import "modules/buttons";
+	@include buttons();
+}

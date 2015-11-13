@@ -1,0 +1,18 @@
+/*****************************************
+ * React component base main SASS file
+ * All SASS modules should be included in this file
+ *****************************************/
+
+.fbra_falabella-component {
+	@import "modules/base";
+	@include base();
+
+	@import "modules/typography";
+	@include typography();
+
+	@import "modules/forms";
+	@include forms();
+	
+	@import "modules/buttons";
+	@include buttons();
+}
